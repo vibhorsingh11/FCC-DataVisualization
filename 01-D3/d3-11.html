@@ -1,0 +1,35 @@
+<!-- The last challenge created an svgelement with a given width and height, which was visible because it had a background-colorapplied to it in the styletag. The code made space for the given width and height.
+
+The next step is to create a shape to put in the svgarea. There are a number of supported shapes in SVG, such as rectangles and circles. They are used to display data. For example, a rectangle (<rect>) SVG shape could create a bar in a bar chart.
+
+When you place a shape into the svgarea, you can specify where it goes with xand ycoordinates. The origin point of (0, 0) is in the upper-left corner. Positive values for xpush the shape to the right, and positive values for ypush the shape down from the origin point.
+
+To place a shape in the middle of the 500 (width) x 100 (height) svgfrom last challenge, the xcoordinate would be 250 and the ycoordinate would be 50.
+
+An SVG recthas four attributes. There are the xand ycoordinates for where it is placed in the svgarea. It also has a heightand widthto specify the size.
+
+
+Add a rectshape to the svgusing append(), and give it a widthattribute of 25 and heightattribute of 100. Also, give the rectxand yattributes each set to 0. -->
+
+<body>
+    <script>
+      const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+      
+      const w = 500;
+      const h = 100;
+      
+      const svg = d3.select("body")
+                    .append("svg")
+                    .attr("width", w)
+                    .attr("height", h)
+                    // Add your code below this line
+                    .append("rect")
+                    .attr("width",25)
+                    .attr("height",100)
+                    .attr("y",0)
+                    .attr("x",0)
+                    
+                    
+                    // Add your code above this line
+    </script>
+  </body>
